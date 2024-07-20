@@ -1,0 +1,80 @@
+{
+	"id": "44693bf0-9464-4a6d-99fb-516321595097",
+	"name": "Vids_Collection",
+	"allTests": [],
+	"timestamp": "2019-07-22T10:26:41.410Z",
+	"collection_id": "a0062003-0a8c-406d-a797-952ded16e5d8",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "a0062003-0a8c-406d-a797-952ded16e5d8",
+		"name": "Vids_Collection",
+		"description": null,
+		"auth": null,
+		"events": null,
+		"variables": null,
+		"order": [],
+		"folders_order": [
+			"9b9a8b95-5ff4-46df-bf8b-ee1a7f02972c",
+			"0fde7c3a-3fbf-43d1-994c-b3fcbd7d231b"
+		],
+		"owner": "0",
+		"favorite": false
+	},
+	"folder": null,
+	"environment": null,
+	"globals": null,
+	"results": [
+		{
+			"name": "get-tagnames",
+			"id": "b91c3b78-2230-42a1-a313-a79e7be72eeb",
+			"url": "https://api.sproutvideo.com/v1/tags/7e9edeb21915f0",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"362"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "362",
+			"totalRequestTime": "362",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 0,
+	"totalFail": 0,
+	"totalTime": 362,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "get-tagnames",
+			"id": "b91c3b78-2230-42a1-a313-a79e7be72eeb",
+			"url": "https://api.sproutvideo.com/v1/tags/7e9edeb21915f0",
+			"time": "2019-07-22T10:26:41.410Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		}
+	],
+	"synced": false
+}

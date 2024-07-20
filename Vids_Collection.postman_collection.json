@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "a0062003-0a8c-406d-a797-952ded16e5d8",
+		"name": "Vids_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "reqs-for-sprout",
+			"item": [
+				{
+					"name": "get-videos",
+					"item": [
+						{
+							"name": "get-videos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/videos?folder_id={{folder_id}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"videos"
+									],
+									"query": [
+										{
+											"key": "folder_id",
+											"value": "{{folder_id}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get-upload-token",
+					"item": [
+						{
+							"name": "get-upload-token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\n}"
+								},
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/upload_tokens",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"upload_tokens"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "create-folder",
+					"item": [
+						{
+							"name": "create-folder",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"name": "Content-Type",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"{{username}}\"\n}"
+								},
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/folders",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"folders"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get-folders",
+					"item": [
+						{
+							"name": "get-folders",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/folders",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"folders"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get-tagnames",
+					"item": [
+						{
+							"name": "get-tagnames",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/tags/{{tag}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"tags",
+										"{{tag}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "delete-video",
+					"item": [
+						{
+							"name": "delete-video",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "SproutVideo-Api-Key",
+										"value": "a0234e770512c1f74b804f49640deb36",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://api.sproutvideo.com/v1/videos/{{id}}",
+									"protocol": "https",
+									"host": [
+										"api",
+										"sproutvideo",
+										"com"
+									],
+									"path": [
+										"v1",
+										"videos",
+										"{{id}}"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "test-something",
+			"item": [
+				{
+					"name": "Testing something",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"{{email}}\",\n\t\"password\": \"{{password}}\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3600/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3600",
+							"path": [
+								"auth"
+							]
+						},
+						"description": "As the name suggests"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
